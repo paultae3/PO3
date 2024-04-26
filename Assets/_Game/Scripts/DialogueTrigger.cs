@@ -17,7 +17,6 @@ public class DialogueTrigger : MonoBehaviour
         {
             dialogueController.StartDialogue(_localDialogue);
 
-            Debug.Log("test test");
         }
 
     }
