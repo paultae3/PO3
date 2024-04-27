@@ -1391,13 +1391,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _localDialogue:
-    name: Linda
+    name: Karen
+    portrait:
+    - {fileID: 21300000, guid: 18f2c6272765d2642bf1b69083bb91eb, type: 3}
     _speeches:
-    - Hi, John!!
-    - 'The weather is so good.
+    - Hi, Steve!
+    - 'There will be a new quest in downtown tomorrow.
 
 '
-    - 'I think I will go to the zoo today.
+    - 'You should go check it out!
 
 '
 --- !u!65 &1244979964
@@ -1621,9 +1623,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _localDialogue:
     name: Jack
+    portrait:
+    - {fileID: 21300000, guid: 7b48d15d6e15b0f42aacca42e286b9f3, type: 3}
     _speeches:
-    - Hello, John.
-    - 'You looks so blue today.
+    - Hey, Steve!
+    - 'You should go to the party tonight!
+
+'
+    - 'There will be a lot of items to collect overthere!
 
 '
 --- !u!1 &1512365748
@@ -1795,7 +1802,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _nameText: {fileID: 1124915319}
   _dialogueText: {fileID: 224115332}
-  _animator: {fileID: 825844988}
+  _portrait: {fileID: 1512365750}
+  _dialogueAnimator: {fileID: 825844988}
 --- !u!1 &1585221794
 GameObject:
   m_ObjectHideFlags: 0

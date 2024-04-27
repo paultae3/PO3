@@ -10,7 +10,9 @@ public class DialogueController : MonoBehaviour
     public TMP_Text _nameText;
     public TMP_Text _dialogueText;
 
-    public Animator _animator;
+    public Image _portrait;
+
+    public Animator _dialogueAnimator;
 
     private Queue<string> _speeches;
 
@@ -30,9 +32,11 @@ public class DialogueController : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
 
-        _animator.SetBool("IsOPen", true);
+        _dialogueAnimator.SetBool("IsOPen", true);
 
         _nameText.text = dialogue.name;
+
+        _portrait.sprite = dialogue.portrait[0];
 
         _speeches.Clear();
 
@@ -63,7 +67,7 @@ public class DialogueController : MonoBehaviour
 
     void EndDialogue()
     {
-        _animator.SetBool("IsOPen", false);
+        _dialogueAnimator.SetBool("IsOPen", false);
 
     }
 
