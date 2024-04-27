@@ -5,6 +5,7 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
 
+    [Tooltip("Dialogue that apply to this NPC only.")]
     public Dialogue _localDialogue;
 
     public void OnTriggerEnter(Collider other)
